@@ -124,12 +124,34 @@ section{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--description-color);
+    display: flex;
+}
+
+.header-svg{
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.mail-icon,
+.tel-icon{
+    fill: var(--description-color)
 }
 
 .nav-panel-contacts:hover,
 .nav-panel-contacts:focus{
     color:var(--major-color);
 }
+
+.nav-panel-contacts:hover .tel-icon,
+.nav-panel-contacts:focus .tel-icon{
+    fill:var(--major-color);
+}
+
+.nav-panel-contacts:hover .mail-icon,
+.nav-panel-contacts:focus .mail-icon{
+    fill:var(--major-color);
+}
+
 
 .nav-panel-link.current{
     color:var(--major-color);
@@ -138,6 +160,10 @@ section{
 .header-contacts{
     display: flex;
     margin-left: auto;
+}
+
+.header-contacts-item{
+    display:flex;
 }
 
 .header-contacts-item:not(:last-child){
