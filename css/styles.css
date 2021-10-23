@@ -194,7 +194,10 @@ section{
     text-align: center;
 }
 .hero-section{
-    
+    background-color: var(--background-filler-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
 }
